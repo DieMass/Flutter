@@ -1,4 +1,5 @@
 import 'package:first/hw_1.dart';
+import 'package:first/hw_2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -75,6 +76,17 @@ class _MyHomePageState extends State<MyHomePage> {
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) => HomeWork1(title: "HomeWork 1: Widgets")));
+                          },
+                        ),
+                        ListTile(
+                          title: Text(
+                            "HomeWork 2: API",
+                            style: const TextStyle(
+                                color: Colors.deepOrange, fontSize: 16),
+                          ),
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => HomeWork2(title: "HomeWork 2: API")));
                           },
                         )],
                     ),
